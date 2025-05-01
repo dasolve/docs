@@ -2,46 +2,39 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**daSolve** is a framework for the ones that want to build data-driven solutions in the right way.
+The framework adopts all the best practices from the enterprise software industry without the fluffy details. No fancy libraries, no complex abstractions, no unnecessary complexity. Just the right amount of code to get the job done and show your solution to your boss and keep working on it without having to rewrite everything once you go to production and figure out a full rewrite is the best solution to continue the development process.
 
-## Getting Started
+If you are doing PoCs, MVPs or just want to show some fast results, daSolve maybe is not the right tool for you. daSolve is a framework for the ones that want to deploy data-driven solutions in production with confidence. It is a framework for the ones that want to build data-driven solutions in the **right way**.
 
-Get started by **creating a new site**.
+**daSolve** is a framework that requires more time to produce results. It's not a framework that will give you results in a few minutes. It's a framework that will give you consistent results in the long run and will help you to build data-driven solutions that are easy to maintain and extend over time. It emphasizes quality and sustainability over speed.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Principles
 
-### What you'll need
+**daSolve** is built based on the following principles:
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- **Simplicity**: daSolve is built on top of the simplest possible abstractions. It doesn't try to be a one-size-fits-all solution. It doesn't try to be a framework that does everything. It tries to be a framework that helps you in the long run of the development process.
+- **Security**: daSolve prioritizes security by implementing best practices and ensuring that data is handled in a way that your IT organization won't complain.
+- **Maintainability**: daSolve is built with maintainability in mind. It doesn't try to be a framework that does everything. It tries to be a framework that helps you in the long run of the development process.
+- **Quality**: the code that you will produce in daSolve will be of high quality. It will be easy to read and understand. It will be easy to maintain and extend over time. It will be easy to test and deploy.
 
-## Generate a new site
+## Technology Stack
 
-Generate a new Docusaurus site using the **classic template**.
+daSolve is built on top of the following technologies:
 
-The classic template will automatically be added to your project after you run the command:
+- React.JS - For the frontend part of the solution. React is today's most popular framework for building user interfaces.
+- Bun - For the backend/data part of the application. Bun is a modern JavaScript runtime that focuses on speed and efficiency. Bun is also used for package management and building the backend application.
+- TypeScript - For the type safety and better developer experience. TypeScript will ensure the code quality of the project is high and that the you are setting yourself for success in the long run.
+- Python - For the data science part of the application. Python is the most popular language for data science and machine learning. It has a rich ecosystem of libraries and frameworks that make it easy to work with data.
+- FastAPI - For data-driven "functions".
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Operating Systems
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+daSolve is built to work on the following operating systems:
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+- MacOS
+- Linux
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Windows machines must use WSL2 to run daSolve. Windows is not supported natively. When using WSL2, you can follow the instructions for Linux.
