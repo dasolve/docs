@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'daSolve',
+  title: 'Dasolve',
   tagline: 'Creating data-driven solutions in the right way',
   favicon: 'img/favicon.ico',
 
@@ -68,10 +68,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'daSolve',
+      title: 'Dasolve',
       items: [
+        {to: '/docs', label: 'Documentation', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
-        
       ],
     },
     footer: {
@@ -81,8 +81,16 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'What is Dasolve?',
+              to: '/docs/',
+            },
+            {
+              label: 'Principles',
+              to: '/docs/principles',
+            },
+            {
+              label: 'Getting Started',
+              to: '/docs/getting-started',
             },
           ],
         },
@@ -117,7 +125,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Dasolve.`,
     },
     prism: {
       theme: prismThemes.github,
