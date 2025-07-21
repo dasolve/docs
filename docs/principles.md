@@ -77,7 +77,7 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 3.11. Stateful (connected) components and stateless (presentational) components must be separated
 
-3.11.1. Connected components must have Connected in its component name.
+3.11.1. Connected components must have "Connected" in its component name.
 
 3.11.2. Stateless components must not have any hooks.
 
@@ -85,13 +85,15 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 3.12. Frontends must support end-to-end type safety with the backend.
 
+3.13. Frontends should not wrangle data on the client. All data wrangling should be done on the backend or in data jobs.
+
 ## 4. Backend
 
 4.1. Backends will follow the Backend for Frontend (BFF) architecture.
 
 4.2. Backends will use Hono as the framework.
 
-4.3. Backends must have end-to-end type safety with the frontend.
+4.3. Backends must have end-to-end type safety with the frontend (Hono RPC).
 
 4.4. Backends must support CORS.
 
@@ -102,3 +104,37 @@ The principles listed here are not exhaustive. More principles will be added ove
 4.6.1. Backends must be able to handle the tokens forwarded from the frontend and validate them.
 
 4.6.2. Backends must support authorization based on role claims in the validated token.
+
+4.7. Backends must support rate limiting to prevent abuse.
+
+4.8. Backends must support error monitoring with Sentry.
+
+## 5. Data
+
+5.1. Data models will be defined using Dasolve DB DDL, which is a YAML-based DSL.
+
+5.2. Changes to data models will be tracked by schema migrations.
+
+5.3. Data models should only contain the necessary fields for the application.
+
+5.3.1. Data models should not contain data that is not used in the application.
+
+5.4. Data models will be deployed in PostgreSQL servers.
+
+5.5. Each data model will have a corresponding schema in the database.
+
+5.6. Data models will be accessed from backends using Drizzle ORM.
+
+5.7. Data models will be accessed from data jobs and other python code using SQLModel ORM.
+
+5.8. Data jobs for filling up or updating data on the data models shall be triggered by events coming from the frontend and its real usage.
+
+5.8.1. Data jobs must be idempotent and able to handle retries gracefully.
+
+5.8.2. Data jobs should not be triggered by cron jobs or scheduled tasks, but rather by user actions or events in the system.
+
+5.9. Data jobs must be able to run in parallel and scale horizontally.
+
+5.10. Measured values should be stored in the database in the SI (International System of Units) unit without loss of precision.
+
+5.11. Time Series data should be stored using the right storage method in the database via using TimescaleDB.
