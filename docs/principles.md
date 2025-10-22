@@ -13,31 +13,33 @@ The framework principles will be split in some sections to make it easier to rea
 - Data
 - Infrastructure
 
-Those principles set simple rules to be followed by developers working with Dasolve. The framework will do its best to enforce those principles, but it is up to the developer to follow them and keep the codebase aligned with them. If developers don't follow those principles, the framework will not be able to help them in the long run of the development process.
+Those principles set simple rules to be followed by developers and LLMs working with the Dasolve Framework. The framework will do its best to enforce those principles, but it is up to the developer to follow them and keep the codebase aligned with them. If developers don't follow those principles, the framework will not be able to help them in the long run of the development process.
 
-The principles listed here are not exhaustive. More principles will be added over time as the framework evolves and new best practices are discovered. The goal is to keep the principles simple and easy to follow, while still providing a solid foundation for building data-driven solutions.
+The principles listed here are not exhaustive. More principles will be added over time as the framework evolves and new best practices are discovered. The goal is to keep the principles simple and easy to follow, while still providing a solid foundation for building data-driven solutions with enough guardrails to avoid several pitfalls.
 
-## 1. Development Environment
+## Development Environment
 
-1.1. The primary programming language for Dasolve is TypeScript. It will be used in all parts of the framework.
+[ADR-001](./adrs/ADR-001.md) - The primary programming language for Dasolve is TypeScript. It will be used in all parts of the framework.
 
-1.2. For data-related tasks (Jobs and Machine Learning functions), Python will be used as the primary programming language.
+[ADR-002](./adrs/ADR-002.md) - For data-related tasks (Jobs and Machine Learning functions), Python will be used as the primary programming language.
 
-1.3. The package manager for Javascript/Typescript packages is Bun.
+[ADR-003](./adrs/ADR-003.md) - The package manager for Javascript/Typescript packages is Bun.
 
-1.4. The package manager for Python packages is uv
+[ADR-004](./adrs/ADR-004.md) - The package manager for Python packages is uv.
 
-1.5. The primary runtime for Typescript is Bun.
+[ADR-005](./adrs/ADR-005.md) - The primary runtime for Typescript is Bun.
 
-1.5.1. Node.JS may be used for tools that don't support Bun yet, like Storybook or Docusaurus.
+[ADR-006](./adrs/ADR-006.md) - Node.JS may be used for tools that don't support Bun yet, like Storybook or Docusaurus.
 
-1.6. The supported Operating Systems are MacOS and Linux. Windows developers must use WSL for development.
+[ADR-007](./adrs/ADR-007.md) - The supported Operating Systems are MacOS and Linux. Windows developers must use WSL for development.
 
-## 2. Developer Experience
+[ADR-008](./adrs/ADR-008.md) - The toolchain management will be done with proto.
 
-2.1. VSCode is the IDE for Dasolve development.
+## Developer Experience
 
-2.2. Moonrepo is the monorepo tool for Dasolve development.
+2.1. VSCode and its forks is the IDE for Dasolve solution development.
+
+2.2. Moonrepo is the monorepo tool (task runner and orchestrator) for Dasolve solutions development.
 
 2.3. Linting will be enforced in the repository.
 
