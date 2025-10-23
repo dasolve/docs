@@ -37,7 +37,7 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 ## Developer Experience
 
-2.1. VSCode and its forks is the IDE for Dasolve solution development.
+[ADR-009](./adrs/ADR-009.md) - VSCode and its forks is the IDE for Dasolve solution development.
 
 2.2. Moonrepo is the monorepo tool (task runner and orchestrator) for Dasolve solutions development.
 
