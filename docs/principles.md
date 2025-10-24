@@ -13,7 +13,7 @@ The framework principles will be split in some sections to make it easier to rea
 - Data
 - Infrastructure
 
-Those principles set simple rules to be followed by developers and LLMs working with the Dasolve Framework. The framework will do its best to enforce those principles, but it is up to the developer to follow them and keep the codebase aligned with them. If developers don't follow those principles, the framework will not be able to help them in the long run of the development process.
+Those principles set simple architectural decisions to be followed by developers and LLMs working with the Dasolve Framework to build their solutions. The framework will do its best to enforce those principles, but it is up to the developer to follow them and keep the codebase aligned with them. If developers don't follow those principles, the framework will not be able to help them in the long run of the development process.
 
 The principles listed here are not exhaustive. More principles will be added over time as the framework evolves and new best practices are discovered. The goal is to keep the principles simple and easy to follow, while still providing a solid foundation for building data-driven solutions with enough guardrails to avoid several pitfalls.
 
@@ -39,21 +39,15 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-009](./adrs/ADR-009.md) - VSCode and its forks is the IDE for Dasolve solution development.
 
-2.2. Moonrepo is the monorepo tool (task runner and orchestrator) for Dasolve solutions development.
+[ADR-010](./adrs/ADR-010.md) - Moonrepo is the monorepo tool (task runner and orchestrator) for Dasolve solutions development.
 
-2.3. Linting will be enforced in the repository.
+[ADR-011](./adrs/ADR-011.md) - Linting will be enforced in the repository. Typescript code will be linted with oxlint. Python code will be linted with ruff.
 
-2.3.1. Typescript code will be linted with oxlint and ESLint.
+[ADR-012](./adrs/ADR-012.md) - Formatting will be enforced in the repository. Typescript code will be formatted with Prettier. Python code will be formatted with ruff.
 
-2.3.2. Python code will be linted with ruff.
+[ADR-013](./adrs/ADR-013.md) - Dasolve solutions must follow a specific folder structure
 
-2.4. Formatting will be enforced in the repository.
-
-2.4.1. Typescript code will be formatted with Prettier.
-
-2.4.2. Python code will be formatted with ruff.
-
-## 3. Frontend
+## Frontend
 
 3.1. Frontends will follow the SPA (Single Page Application) architecture.
 
