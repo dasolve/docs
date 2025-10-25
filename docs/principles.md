@@ -95,11 +95,11 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-035](./adrs/ADR-035.md) - Backends must support authentication and authorization with Azure AD. Backends must be able to handle the tokens forwarded from the frontend and validate them. Backends must support authorization based on role claims in the validated token.
 
-ADR-036 - Backends must support rate limiting to prevent abuse.
+[ADR-036](./adrs/ADR-036.md) - Backends must support rate limiting to prevent abuse.
 
 ## Data
 
-ADR-037 - Data models will be defined using Dasolve Data Model DDL (https://github.com/dasolve/data-model-ddl), which is a YAML-based DSL.
+ADR-037 - Data models will be defined using [Dasolve Data Model DDL](https://github.com/dasolve/data-model-ddl), which is a YAML-based DSL.
 
 ADR-038 - Changes to data models will be tracked by schema migrations.
 
