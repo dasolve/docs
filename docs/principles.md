@@ -91,7 +91,7 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-033](./adrs/ADR-033.md) - Backends must support CORS.
 
-ADR-034 - Backends must be fully documented with OpenAPI specs.
+[ADR-034](./adrs/ADR-034.md) - Backends must be fully documented with OpenAPI specs.
 
 ADR-035 - Backends must support authentication and authorization with Azure AD. Backends must be able to handle the tokens forwarded from the frontend and validate them. Backends must support authorization based on role claims in the validated token.
 
