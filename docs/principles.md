@@ -73,11 +73,11 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-025](./adrs/ADR-025.md) - Frontends must support end-to-end type safety with the backend.
 
-3.13. Frontends should not wrangle data on the client. All data wrangling should be done on the backend or in data jobs.
+[ADR-026](./adrs/ADR-026.md) - Frontends should not wrangle data on the client. All data wrangling should be done on the backend or in data jobs. Queries should be lean and only fetch the data required by the UI without having to mix and match data on the client side.
 
-3.14. Mutations must be done optimistically to provide a better user experience.
+[ADR-027](./adrs/ADR-027.md) - Mutations must be done optimistically to provide a better user experience.
 
-3.15. Frontends must follow a folder structure that separates pages, components, queries, hooks and routes.
+[ADR-028](./adrs/ADR-028.md) - Frontends must follow a folder structure that separates pages, components, queries, hooks and routes.
 
 ## 4. Backend
 
