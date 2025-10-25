@@ -32,4 +32,10 @@ The intended audience for this documentation includes:
 
 Make sure to tailor the documentation to meet the needs of these audiences, providing clear and actionable information that aligns with the Dasolve framework's principles and guidelines.
 
+## Project Focus
+
+**Dasolve is primarily focused on greenfield projects.** The framework is designed for building new applications from scratch, with opinionated choices that enable rapid development while avoiding common pitfalls. While the principles and patterns may be valuable for reference in existing projects, the ADRs and documentation should not include legacy migration strategies or backwards compatibility considerations. Focus on the ideal state for new projects.
+
+## Documentation Guidelines
+
 Try to bring code examples for the ADRs and blog posts when applicable, make sure to follow the conventions defined in other ADRs. Also try to generate a link structure across the contents in the repository, linking to related ADRs and specifications when relevant. This will ensure a cohesive and interconnected documentation experience for users of the Dasolve framework.
