@@ -41,3 +41,5 @@ Make sure to tailor the documentation to meet the needs of these audiences, prov
 Try to bring code examples for the ADRs and blog posts when applicable, make sure to follow the conventions defined in other ADRs. Also try to generate a link structure across the contents in the repository, linking to related ADRs and specifications when relevant. This will ensure a cohesive and interconnected documentation experience for users of the Dasolve framework.
 
 Don't mention package versions, dates, or any information that may become outdated. Focus on timeless principles and best practices that will remain relevant as the framework evolves.
+
+When writing documentation, please read through the entire context of the framework by reviewing all ADRs in the `docs/adrs/` directory. This will help ensure that your documentation is accurate, comprehensive, and aligned with the overall goals and standards of the Dasolve framework.
