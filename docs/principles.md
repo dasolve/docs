@@ -63,8 +63,6 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-018](./adrs/ADR-018.md) - Frontends will use TanStack Query for data fetching and caching.
 
-[ADR-019](./adrs/ADR-019.md) - Frontends will use MUI as the base UI library. The look and feel of it will be customizeable.
-
 [ADR-020](./adrs/ADR-020.md) - Frontends will use Jotai for internal global state management.
 
 [ADR-021](./adrs/ADR-021.md) - Frontends will use CSS modules for any extra styling required.
