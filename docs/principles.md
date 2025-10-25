@@ -79,7 +79,9 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-028](./adrs/ADR-028.md) - Frontends must follow a folder structure that separates pages, components, queries, hooks and routes.
 
-## 4. Backend
+[ADR-029](./adrs/ADR-029.md) - Don't use barrel files in the frontend. This would help with tree shaking and reduce bundle size.
+
+## Backend
 
 4.1. Backends will follow the Backend for Frontend (BFF) architecture.
 
@@ -130,3 +132,7 @@ The principles listed here are not exhaustive. More principles will be added ove
 5.10. Measured values should be stored in the database in the SI (International System of Units) unit without loss of precision.
 
 5.11. Time Series data should be stored using the right storage method in the database via using TimescaleDB.
+
+## 6. Infrastructure
+
+## 7. Observability
