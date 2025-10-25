@@ -89,7 +89,7 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-032](./adrs/ADR-032.md) - Backends must have end-to-end type safety with the frontend (Hono RPC). The validation of the input parameters (body, query, path params) must happen with the help of the [zod validator middleware](https://github.com/honojs/middleware/tree/main/packages/zod-validator)
 
-ADR-033 - Backends must support CORS.
+[ADR-033](./adrs/ADR-033.md) - Backends must support CORS.
 
 ADR-034 - Backends must be fully documented with OpenAPI specs.
 
