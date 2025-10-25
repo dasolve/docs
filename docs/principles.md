@@ -47,21 +47,19 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-013](./adrs/ADR-013.md) - Dasolve solutions must follow a specific folder structure
 
-[ADR-026](./adrs/ADR-026.md) - Typescript code should not use path aliases. All imports must be relative or use package names.
+[ADR-014](./adrs/ADR-014.md) - Typescript code should not use path aliases. All imports must be relative or use package names.
 
 ## Frontend
 
-[ADR-014](./adrs/ADR-014.md) - Frontends will follow the SPA (Single Page Application) architecture.
+[ADR-015](./adrs/ADR-015.md) - Frontends will follow the SPA (Single Page Application) architecture.
 
-[ADR-015](./adrs/ADR-015.md) - Frontends must use React.JS as the framework.
+[ADR-016](./adrs/ADR-016.md) - Frontends must use React.JS as the framework.
 
-[ADR-016](./adrs/ADR-016.md) - Frontends will be built with Vite.
+[ADR-017](./adrs/ADR-017.md) - Frontends will be built with Vite.
 
-[ADR-017](./adrs/ADR-017.md) - Frontends will use TanStack Router as the routing library.
+[ADR-018](./adrs/ADR-018.md) - Frontends will use TanStack Router as the routing library. File routing in a folder tree structure will be used to define the routes in the application.
 
-[ADR-017](./adrs/ADR-017.md) - File routing in a folder tree structure will be used to define the routes in the application.
-
-[ADR-018](./adrs/ADR-018.md) - Frontends will use TanStack Query for data fetching and caching.
+[ADR-019](./adrs/ADR-019.md) - Frontends will use TanStack Query for data fetching and caching.
 
 [ADR-020](./adrs/ADR-020.md) - Frontends will use Jotai for internal global state management.
 
