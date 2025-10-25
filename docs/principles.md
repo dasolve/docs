@@ -47,39 +47,35 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 [ADR-013](./adrs/ADR-013.md) - Dasolve solutions must follow a specific folder structure
 
+[ADR-026](./adrs/ADR-026.md) - Typescript code should not use path aliases. All imports must be relative or use package names.
+
 ## Frontend
 
-3.1. Frontends will follow the SPA (Single Page Application) architecture.
+[ADR-014](./adrs/ADR-014.md) - Frontends will follow the SPA (Single Page Application) architecture.
 
-3.2. Frontends must use React.JS as the framework.
+[ADR-015](./adrs/ADR-015.md) - Frontends must use React.JS as the framework.
 
-3.3. Frontends will be built with Vite.
+[ADR-016](./adrs/ADR-016.md) - Frontends will be built with Vite.
 
-3.4. Frontends will use TanStack Router as the routing library.
+[ADR-017](./adrs/ADR-017.md) - Frontends will use TanStack Router as the routing library.
 
-3.4.1. File routing in a folder tree structure will be used to define the routes in the application.
+[ADR-017](./adrs/ADR-017.md) - File routing in a folder tree structure will be used to define the routes in the application.
 
-3.5. Frontends will use TanStack Query for data fetching and caching.
+[ADR-018](./adrs/ADR-018.md) - Frontends will use TanStack Query for data fetching and caching.
 
-3.6. Frontends will use MUI as the base UI library. The look and feel of it will be customizeable.
+[ADR-019](./adrs/ADR-019.md) - Frontends will use MUI as the base UI library. The look and feel of it will be customizeable.
 
-3.7. Frontends will use Jotai for internal global state management.
+[ADR-020](./adrs/ADR-020.md) - Frontends will use Jotai for internal global state management.
 
-3.8. Frontends will use CSS modules for any extra styling required.
+[ADR-021](./adrs/ADR-021.md) - Frontends will use CSS modules for any extra styling required.
 
-3.9. Frontends will support Azure AD authentication.
+[ADR-022](./adrs/ADR-022.md) - Frontends will support Azure AD authentication.
 
-3.10. Frontend components will be developed and tested in isolation by using Storybook.
+[ADR-023](./adrs/ADR-023.md) - Frontend components will be developed and tested in isolation by using Storybook.
 
-3.11. Stateful (connected) components and stateless (presentational) components must be separated
+[ADR-024](./adrs/ADR-024.md) - Stateful (connected) components and stateless (presentational) components must be separated. Connected components must have "Connected" in its component name. Stateless components must not have any hooks. Helper functions must be unit tested.
 
-3.11.1. Connected components must have "Connected" in its component name.
-
-3.11.2. Stateless components must not have any hooks.
-
-3.11. Helper functions must be unit tested.
-
-3.12. Frontends must support end-to-end type safety with the backend.
+[ADR-025](./adrs/ADR-025.md) - Frontends must support end-to-end type safety with the backend.
 
 3.13. Frontends should not wrangle data on the client. All data wrangling should be done on the backend or in data jobs.
 
