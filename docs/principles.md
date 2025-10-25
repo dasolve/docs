@@ -79,6 +79,10 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 3.13. Frontends should not wrangle data on the client. All data wrangling should be done on the backend or in data jobs.
 
+3.14. Mutations must be done optimistically to provide a better user experience.
+
+3.15. Frontends must follow a folder structure that separates pages, components, queries, hooks and routes.
+
 ## 4. Backend
 
 4.1. Backends will follow the Backend for Frontend (BFF) architecture.
