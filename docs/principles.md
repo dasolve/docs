@@ -83,56 +83,52 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 ## Backend
 
-4.1. Backends will follow the Backend for Frontend (BFF) architecture.
+ADR-030 - Backends will follow the Backend for Frontend (BFF) architecture.
 
-4.2. Backends will use Hono as the framework.
+ADR-031 - Backends will use Hono as the framework.
 
-4.3. Backends must have end-to-end type safety with the frontend (Hono RPC).
+ADR-032 - Backends must have end-to-end type safety with the frontend (Hono RPC). The validation of the input parameters (body, query, path params) must happen with the help of the [zod validator middleware](https://github.com/honojs/middleware/tree/main/packages/zod-validator)
 
-4.4. Backends must support CORS.
+ADR-033 - Backends must support CORS.
 
-4.5. Backends must be fully documented with OpenAPI specs.
+ADR-034 - Backends must be fully documented with OpenAPI specs.
 
-4.6. Backends must support authentication and authorization with Azure AD.
+ADR-035 - Backends must support authentication and authorization with Azure AD. Backends must be able to handle the tokens forwarded from the frontend and validate them. Backends must support authorization based on role claims in the validated token.
 
-4.6.1. Backends must be able to handle the tokens forwarded from the frontend and validate them.
+ADR-036 - Backends must support rate limiting to prevent abuse.
 
-4.6.2. Backends must support authorization based on role claims in the validated token.
+## Data
 
-4.7. Backends must support rate limiting to prevent abuse.
+ADR-037 - Data models will be defined using Dasolve Data Model DDL (https://github.com/dasolve/data-model-ddl), which is a YAML-based DSL.
 
-4.8. Backends must support error monitoring with Sentry.
+ADR-038 - Changes to data models will be tracked by schema migrations.
 
-## 5. Data
+ADR-039 - Data models should only contain the necessary fields for the application. Data models should not contain data that is not used in the application.
 
-5.1. Data models will be defined using Dasolve DB DDL, which is a YAML-based DSL.
+ADR-040 - Data models will be deployed in PostgreSQL servers.
 
-5.2. Changes to data models will be tracked by schema migrations.
+ADR-041 - Each data model will have a corresponding schema in the database.
 
-5.3. Data models should only contain the necessary fields for the application.
+ADR-042 - Data models will be accessed from backends using Drizzle ORM.
 
-5.3.1. Data models should not contain data that is not used in the application.
+ADR-043 - Data models will be accessed from data jobs and other python code using SQLModel ORM.
 
-5.4. Data models will be deployed in PostgreSQL servers.
+ADR-044 - Data jobs for filling up or updating data on the data models shall be triggered by events coming from the frontend and its real usage.
 
-5.5. Each data model will have a corresponding schema in the database.
+ADR-045 - Data jobs must be idempotent and able to handle retries gracefully.
 
-5.6. Data models will be accessed from backends using Drizzle ORM.
+ADR-046 - Data jobs should not be triggered by cron jobs or scheduled tasks, but rather by user actions or events in the system.
 
-5.7. Data models will be accessed from data jobs and other python code using SQLModel ORM.
+ADR-047 - Data jobs must be able to run in parallel and scale horizontally.
 
-5.8. Data jobs for filling up or updating data on the data models shall be triggered by events coming from the frontend and its real usage.
+ADR-048 - Measured values should be stored in the database in the SI (International System of Units) unit without loss of precision.
 
-5.8.1. Data jobs must be idempotent and able to handle retries gracefully.
+ADR-049 - Time Series data should be stored using the right storage method in the database via using TimescaleDB.
 
-5.8.2. Data jobs should not be triggered by cron jobs or scheduled tasks, but rather by user actions or events in the system.
+## Infrastructure
 
-5.9. Data jobs must be able to run in parallel and scale horizontally.
+## Observability
 
-5.10. Measured values should be stored in the database in the SI (International System of Units) unit without loss of precision.
+Backends, frontends, functions and data jobs must implement monitoring with Sentry.
 
-5.11. Time Series data should be stored using the right storage method in the database via using TimescaleDB.
-
-## 6. Infrastructure
-
-## 7. Observability
+Verbose logging must only happen if enabled by a DEBUG environment variable.
