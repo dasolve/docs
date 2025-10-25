@@ -83,7 +83,7 @@ The principles listed here are not exhaustive. More principles will be added ove
 
 ## Backend
 
-ADR-030 - Backends will follow the Backend for Frontend (BFF) architecture.
+[ADR-030](./adrs/ADR-030.md) - Backends will follow the Backend for Frontend (BFF) architecture.
 
 ADR-031 - Backends will use Hono as the framework.
 
